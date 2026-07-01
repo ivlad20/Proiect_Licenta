@@ -1,0 +1,68 @@
+# ============================================================
+#  .gitignore — Proiect Licență (recunoaștere asamblare)
+# ============================================================
+
+# --- Secrete / config local (NU urca niciodată aceste fișiere!) ---
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+secrets.*
+*credentials*
+
+# --- Node / frontend (client/my-app) ---
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Python / backend (server) ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Modele antrenate și date (grele; nu pe git) ---
+*.pt
+*.onnx
+*.engine
+*.weights
+runs/
+datasets/
+dataset_*/
+*.zip
+
+# --- Arduino / PlatformIO ---
+.pio/
+.pioenvs/
+arduino_iluminare/.pio/
+
+# --- IDE / editor / OS ---
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- Loguri / temporare ---
+*.log
+tmp/
+temp/
